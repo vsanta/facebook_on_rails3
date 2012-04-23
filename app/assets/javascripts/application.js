@@ -13,3 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= require twitter/bootstrap
+//= require twitter/bootstrap/bootstrap-button
+//= require twitter/bootstrap/bootstrap-tab
