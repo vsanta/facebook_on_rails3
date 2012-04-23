@@ -221,4 +221,8 @@ Devise.setup do |config|
   #   manager.intercept_401 = false
   #   manager.default_strategies(:scope => :user).unshift :some_external_strategy
   # end
+
+  require "omniauth-facebook"
+  config.omniauth :facebook, Rails.application.config.facebook_api_key , Rails.application.config.facebook_app_secret,
+                  {:scope => 'email, offline_access, publish_stream'}#, :client_options => {:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}}
 end

@@ -36,4 +36,9 @@ FacebookOnRails3::Application.configure do
   config.assets.debug = true
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  config.facebook_api_key = '122363926057'
+  config.facebook_app_secret = '76c3d213b1fdc7c06f1147e33b98105d'
+
+
 end
